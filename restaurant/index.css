@@ -1,0 +1,150 @@
+body{
+  overflow:scroll;
+}
+#Menu_img{
+  float: right;
+  margin-top: 25px;
+  display:none;
+}
+
+/* ---HEADER--- */
+
+header.desktop{
+  width: 100%;
+}
+header .mobile{
+      display: none;
+      margin-right: 10%;
+    }
+.topnav {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: black;
+    width: 100%;
+    /* position: relative; */
+  }
+header .topnav a{
+    color: white;
+    margin-left: 3%;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 450px)
+{
+header .mobile{
+   text-align: center;
+   width: 100%;
+   display: inline-block;
+
+  }
+header .desktop{
+  
+    display: none;
+
+  }
+#Menu_img{
+  display:inline-block;
+}
+}
+
+/* ---SIDEBAR--- */
+ 
+.sideBar_desktop{
+  background-color:rgb(255, 94, 0);
+  width:25%;
+  height: 100%;
+  margin-top: 20px;
+  position: relative;
+  float: left;
+  display:none;
+}
+
+.sideBar_mobile{
+  background-color:rgb(255, 94, 0);
+  width:100%;
+  height: 100%;
+  margin-top: 20px;
+}
+p1{
+  color:white;
+}
+span{
+  font-size: 20px;
+}
+#sideBarHeadings{
+  background-color:lavender;
+    padding-left: 10px;
+    margin-left: 8px;
+    margin-top: 12px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    height: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+@media screen and (min-width:768px)
+{
+.desc{
+  display: flex;
+  /* position: relative; */
+  margin-left: 30%;
+   /* background-color: hotpink;  */
+}
+.welcome{
+  display: flex;
+  /* background-color: plum; */
+  justify-content: space-evenly;
+}
+.sideBar_desktop{
+  display:inline-block;
+}
+.sideBar_mobile{
+  display:none;
+}
+}
+
+/* ---FOOTER--- */
+
+footer .mobile
+{
+  display: none;
+}
+
+@media screen and (max-width: 686px)
+{
+  footer .mobile{
+    display:inline-block;
+    text-align: center;
+    margin-left: 40px;
+  }
+  footer .desktop{
+    display: none;
+  }
+
+  
+}
+#desc_main_heading{
+  color:darkmagenta;
+} 
+dl{color: green;
+font-weight: 100;
+}
+.bottomnav{
+  float: right;
+}
+.bottomnav a{
+text-decoration: none;
+color: black;
+}
+dd{
+  margin: 0px;
+}
+
+#decs_img{
+  height: 100px;
+}
+ 
+
