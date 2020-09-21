@@ -1,22 +1,26 @@
-
 body{
   margin: 0px;
 }
+.top{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
 .logo{
-margin-left: 3%;
+margin-right:auto;
 }
 .Menu_img{
-  float: right;
-  margin-top: 25px;
-  margin-right: 20px;
+margin-top: 25px;
+height: 50%;   
 }
 .slide{
+  padding-top: 2%;
+  width: 100%;
   display:none;
 }
 /* ---HEADER--- */
 .header{
-  margin: 0px;
-  padding: 0px;
   width: 100%;
 }
 .topnav {
@@ -37,8 +41,9 @@ margin-left: 3%;
 
 .desc_main_heading{
   color:brown;
-  margin: 10px 20px 5px;
-
+  margin: 20px 20px 5px;
+  font-family: sans-serif;
+  font-size: 25px ;
 }
 .desc_img{
   margin: 5px 0px 10px;
@@ -47,12 +52,8 @@ margin-left: 3%;
 }
 
 .desc{
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   font-family: sans-serif;
-}
-p2{
-  font-family: sans-serif;
-  line-height: 25px;
 }
 .desc_heading{
   padding: 10px 0px;
@@ -62,10 +63,10 @@ font-weight: 100;
 .welcome{
  margin: 20px;
 }
-h2{
+
+.desc_parts{
   font-family: sans-serif;
-  color: brown;
-  font-weight: 500;
+  line-height: 25px;
 }
 /* SIDEBAR */
 
@@ -74,25 +75,42 @@ h2{
   margin: 20px;
   overflow-y: scroll;
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  
+  flex-flow: column; 
+  height: min-content; 
+  padding-left: 20px;
+  padding-right:20px;
 }
-p1{
+.sideBar_parts{
   color:white;
   Line-height: 20px;
+  font-family: sans-serif;
+  margin-left: 10px;
+
 }
 
 .sideBarHeadings{
   background-color:lavender;
-    margin: 5%;
-    padding: 3%;
     font-family: sans-serif;
     font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 li{
+  margin-left: 0%;
   line-height: 30px;
+}
+ul{
+  padding-left: 20px;
+  margin: 0%;
+}
+.days{
+  font-size: 20px;
+}
+.timing{
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /* FOOTER */
@@ -109,13 +127,7 @@ li{
 .bottomnav a{
   text-decoration: none;
   color: black;
-  }
-  
-p3{
-    font-family: sans-serif;
-    line-height: 25px;
 }
-  
 
 .copyright{
   display: flex;
@@ -139,6 +151,8 @@ p3{
 hr{
   margin-left: 20px;
   margin-right: 20px;
+  height:1px;
+   background-color: black;
 }
 @media only screen and (min-width:768px){
   .Menu_img{
@@ -146,9 +160,6 @@ hr{
   }
   body{
     margin:1%;
-  }
-  .logo{
-    margin-left: 1px;
   }
 
   /* HEADER */
@@ -161,12 +172,10 @@ hr{
   }
   .slide{
     display: inline;
-  
   }
   /* WRAPPER */
 
   .wrapper{
-    display: flex;
     display: flex;
     flex-flow: row-reverse;
     justify-content: space-between;
@@ -188,7 +197,6 @@ hr{
    
   }
 .desc{
-    margin-top: 5%;
     margin-left: 0px;
     display: flex;
     flex-flow: row;
@@ -201,33 +209,26 @@ hr{
     justify-content: row;
     margin:0px;
   }
-  p2{
+  .desc_parts{
     width: 80%;
-    margin-left: 5%;
+    margin-left: 20px;
   }
   
-  .inside{
-    margin-left: 3%;
-  }
-  .desc_main_heading{
-    margin: 10px 0px 5px;
 
+  .desc_main_heading{
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .desc_heading{
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 10px 20px;
   }
   /* SIDEBAR */
 
   .sideBar{
   width:40%;
   overflow: hidden;
-  margin-bottom: 20%;
   margin-left: 0px;
-
-  }
-.sideBarHeadings{
-  margin: 3;
-  padding: 3%;
+  margin-right:40px;
   }
 
   /* FOOTER */
@@ -264,7 +265,6 @@ hr{
 
     .sideBar{
       width:30%;
-      margin-bottom:20px;
 
     }
     .total_desc{
