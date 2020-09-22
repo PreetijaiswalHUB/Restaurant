@@ -98,12 +98,12 @@ font-weight: 100;
 }
 
 li{
-  margin-left: 0%;
+  margin-left: 0px;
   line-height: 30px;
 }
 ul{
   padding-left: 20px;
-  margin: 0%;
+  margin: 0px;
 }
 .days{
   font-size: 20px;
@@ -159,7 +159,7 @@ hr{
     display:none;
   }
   body{
-    margin:1%;
+    margin:10px ;
   }
 
   /* HEADER */
