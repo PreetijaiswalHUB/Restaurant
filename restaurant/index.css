@@ -9,7 +9,6 @@ body{
 }
 .top{
   display: flex;
-  flex: auto;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
