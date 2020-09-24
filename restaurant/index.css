@@ -21,7 +21,7 @@ body{
 }
 /* ---HEADER--- */
 
-.topnav {
+.top_nav{
     text-decoration: none;
     font-size: 17px;
     background-color: black;
@@ -29,7 +29,7 @@ body{
     padding: 15px;
     
       }
-.header .topnav a{
+.top_nav a{
     color: white;
     text-decoration: none;
 }
@@ -43,17 +43,14 @@ body{
 
 .desc_main_heading{
   color:brown;
-  margin-bottom:  5px;
   font-size: 25px ;
 }
 .desc_img{
-  margin-bottom:10px;
-  display: block;
   width: 100%;
 }
 
 .desc{
-  margin-top: 20px ;
+  margin: 40px 0px ;
 }
 .desc_heading{
   padding: 10px 0px;
@@ -69,30 +66,27 @@ font-weight: 100;
 }
 /* SIDEBAR */
 
-.sideBar{
+.sidebar{
   background-color:rgb(255, 94, 0);
-  margin: 20px 0px;
-  overflow-y: hidden;
   display: flex;
   flex-flow: column; 
   height: min-content; 
   padding: 20px;
 }
-.sideBar_parts{
+.sidebar_parts{
   color:white;
   Line-height: 20px;
   padding: 20px 10px;
 
 }
 
-.sideBarHeadings{
+.sidebar_headings{
   background-color:lavender;
     font-size: 20px;
     padding: 10px;
 }
 
 li{
-  margin-left: 0px;
   line-height: 30px;
 }
 ul{
@@ -113,10 +107,8 @@ ul{
   padding-bottom: 10px;
 }
 
-.bottomnav{
-  margin-top: 10px;
-}
-.bottomnav a{
+
+.bottom_nav a{
   text-decoration: none;
   color: black;
 }
@@ -124,26 +116,24 @@ ul{
 .copyright{
   display: flex;
   flex-flow: column;
+  padding-top: 5px;
  
 }
 .footer li{
   list-style-type: none;
   display: inline;
-  line-height: 0px;
-
 }
 .footer li:nth-child(n+2):before {
   content: " | ";
 }
 .footer ul{
     padding: 0px;
-    margin:0px;
-  } 
+    }
 hr{
   margin-left: 20px;
   margin-right: 20px;
   height:1px;
-   background-color: black;
+  background-color: black;
 }
 @media only screen and (min-width:768px){
   .Menu_img{
@@ -157,9 +147,11 @@ hr{
   }
   /* HEADER */
 
-  .topnav{text-align: left;
-  padding: 0px;}
-  .topnav a{
+  .top_nav{
+    text-align: left;
+  padding: 0px;
+   }
+  .top_nav a{
     display: inline-block;
     padding: 10px;
   }
@@ -184,12 +176,9 @@ hr{
   .desc_img{
     width: 135px;
     height: 72px;
-    margin: 0px;
-    padding-bottom: 50px;
-   
+    margin: 0px;   
   }
 .desc{
-    margin-left: 0px;
     display: flex;
     flex-flow: row;
     justify-content: row;
@@ -200,14 +189,11 @@ hr{
     display: flex;  
     flex-flow: row;
     justify-content: row;
-    margin:0px;
+    margin:20px 0px;
   }
 .welcome .desc_parts{
   margin-left: 20px;
 }
-  .desc_main_heading{
-    margin-bottom: 0px 0px 10px;
-  }
   
   .desc_heading{
     padding-top: 0px;
@@ -217,10 +203,10 @@ hr{
   }
   /* SIDEBAR */
 
-  .sideBar{
+  .sidebar{
   width:400px;
   overflow: hidden;
-  margin:0px 40px 0px 0px;
+  margin-right:40px;
   }
 
   /* FOOTER */
@@ -238,13 +224,13 @@ hr{
   margin-left:0px;
   flex-flow: row;
 }  
-.bottomnav{
+.bottom_nav{
   display:flex;
   flex-flow: row;
   margin-left: auto;
   margin-top: auto;
 }
-.bottomnav a{
+.bottom_nav a{
   text-decoration: none;
   color: black;
   padding-left: 5px;
@@ -252,7 +238,7 @@ hr{
 }
 @media only screen and (min-width:1025px){
 
-    .sideBar{
+    .sidebar{
       width:350px;
 
     }
