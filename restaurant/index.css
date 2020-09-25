@@ -1,4 +1,3 @@
-
 body{
   margin: 0px;
   font-family: sans-serif;
@@ -35,34 +34,51 @@ body{
 }
 .wrapper{
     display: flex;
-    flex-flow: column;
+    flex-wrap: wrap; 
     justify-content: space-between;
     padding: 20px;
 }
 /* DESCRIPTION */
+.total_desc{
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
 
+}
+.inside{
+  display: flex;
+  flex-wrap: wrap;
+}
 .desc_main_heading{
   color:brown;
   font-size: 25px ;
-}
-.desc_img{
-  width: 100%;
+  margin-bottom: 10px;
 }
 
+
 .desc{
-  margin: 40px 0px ;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 .desc_heading{
   padding: 10px 0px;
   color: green;
 font-weight: 100;
 }
-.welcome{
+.desc_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.total_desc_parts{
+  display: flex;
+  flex-flow: column;
  margin: 20px 0px;
 }
 
 .desc_parts{
-  line-height: 25px;
+  line-height: 23px;
 }
 /* SIDEBAR */
 
@@ -107,18 +123,17 @@ ul{
   padding-bottom: 10px;
 }
 
+.footer_content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
 .bottom_nav a{
   text-decoration: none;
   color: black;
 }
 
-.copyright{
-  display: flex;
-  flex-flow: column;
-  padding-top: 5px;
- 
-}
 .footer li{
   list-style-type: none;
   display: inline;
@@ -169,38 +184,29 @@ hr{
    
   .total_desc{
     width:600px;
-    display: inline-block;
-
 
   }
-  .desc_img{
-    width: 135px;
-    height: 72px;
-    margin: 0px;   
+  .inside{
+    flex-flow: row;
   }
 .desc{
     display: flex;
-    flex-flow: row;
-    justify-content: row;
+    flex-flow: column;
+    margin-left: 30px;
+    margin-top: 0px;
   } 
   
-  .welcome{
+.desc_img{
+  height: 20%;
+  width: 20%;
+} 
 
-    display: flex;  
-    flex-flow: row;
-    justify-content: row;
-    margin:20px 0px;
-  }
-.welcome .desc_parts{
-  margin-left: 20px;
-}
+
   
   .desc_heading{
     padding-top: 0px;
   }
-  .inside{
-    padding-left: 20px;
-  }
+  
   /* SIDEBAR */
 
   .sidebar{
@@ -216,14 +222,11 @@ hr{
 }
 .footer_content{
   margin-top: 20px;
-  display: flex;
   flex-flow: row;
 }
 .copyright{
-  width:auto;
-  margin-left:0px;
-  flex-flow: row;
-}  
+  display: flex;
+} 
 .bottom_nav{
   display:flex;
   flex-flow: row;
@@ -242,14 +245,7 @@ hr{
       width:350px;
 
     }
-    .total_desc{
-      width:940px;
-      display: block;
-      flex-grow: 1;
-    }
-    .desc_img{
-      width: 192px;
-      height: 105px;
-     
-    }
+     .total_desc{
+       width:940px; 
+    } 
 }
